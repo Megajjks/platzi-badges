@@ -21,10 +21,13 @@
   padding: 1rem 0;
 }
 
+<<<<<<< HEAD
 .Badge__work{
   font-size: 30px;
 }
 
+=======
+>>>>>>> 7ad536f94341d1cd0e2f9b470b3dee61de11345e
 .Badge__section-info {
   display: flex;
   flex-direction: column;
