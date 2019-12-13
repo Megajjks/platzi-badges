@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import './style/Badges.css';
 import logo from '../images/badge-header.svg';
 import BadgesList from '../components/BadgesList';
+import MinLoader from '../components/MinLoader';
 import PageLoading from '../components/PageLoading';
 import PageError from '../components/PageError';
 import api from '../api'
@@ -16,6 +17,11 @@ class Badge extends React.Component{
     
     componentDidMount(){
         this.fetchDate(); //Función para hacer petición a la api
+        this.intervalId = setInterval(this.fetchDate, 5000)
+    }
+
+    componentWillUnmount(){
+        clearInterval(this.intervalId);
     }
 
     fetchDate = async () =>{
@@ -30,7 +36,7 @@ class Badge extends React.Component{
     }
 
     render(){
-        if(this.state.loading===true){
+        if(this.state.loading===true && !this.state.data){
          return <PageLoading/>       
         }
 
@@ -54,6 +60,7 @@ class Badge extends React.Component{
                     <div className="Badges__list">
                         <div className="Badge__container">
                             <BadgesList badges={this.state.data}/>
+                            {this.state.loading && <MinLoader/>}
                         </div>
                     </div>
                 </div>       

@@ -2,13 +2,13 @@ import React from 'react';
 import Badge from '../components/Badge';
 import header from '../images/platziconf-logo.svg'
 import BadgeForm from '../components/BadgeForm'
-import './style/BadgeNew.css';
+import './style/BadgeEdit.css';
 import api from '../api'
 import PageLoading from '../components/PageLoading'
 
-class BadgeNew extends React.Component{
+class BadgeEdit extends React.Component{
     state = {
-        loading: false,
+        loading: true,
         error: null,
         form: {
         firstName: '',
@@ -17,6 +17,23 @@ class BadgeNew extends React.Component{
         jobTitle: '',
         twitter: '',
     } };
+
+    componentDidMount(){
+        this.fetchData()
+    }
+
+    fetchData = async e =>{
+        this.setState({loading: true, error:null})
+        try{
+            const data = await api.badges.read(
+                this.props.match.params.badgeId //llamando la id a traves de la ruta pasada en badgeId gracias a react route
+            )
+
+            this.setState({loading:false, form:data})
+        } catch (error){
+            this.setState({loading:false, error:error})
+        }
+    }
 
     handleChange = (e) => {
         /* this.setState({
@@ -38,7 +55,7 @@ class BadgeNew extends React.Component{
         this.setState({ loading: true, error: null });
     
         try {
-          await api.badges.create(this.state.form);
+          await api.badges.update(this.props.match.params.badgeId, this.state.form);
           this.setState({ loading: false });
           this.props.history.push('/badges') //prop de react ruter que reciben las rutas, con esto lo podemos cambiar y dirigirnos a otras paginas
         } catch (error) {
@@ -52,8 +69,8 @@ class BadgeNew extends React.Component{
         }
         return(
             <React.Fragment>
-                <div className="BadgeNew__hero">
-                    <img className="img-fluid BadgeNew__hero-image" src={header} alt="logo"></img>
+                <div className="BadgeEdit__hero">
+                    <img className="img-fluid BadgeEdit__hero-image" src={header} alt="logo"></img>
                 </div>
                 <div className="container">
                     <div className="row">
@@ -68,7 +85,7 @@ class BadgeNew extends React.Component{
                             />
                         </div>
                         <div className="col-6">
-                        <h1>New Attendant</h1>
+                        <h1>Edit Attendant</h1>
                             <BadgeForm 
                                 onChange={this.handleChange} 
                                 formValues={this.state.form}
@@ -83,4 +100,4 @@ class BadgeNew extends React.Component{
     }
 }
 
-export default BadgeNew; 
+export default BadgeEdit; 
