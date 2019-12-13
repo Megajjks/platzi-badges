@@ -12,9 +12,17 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.8",
+    "bootstrap": "^4.4.1",
+    "md5": "^2.2.1",
     "react": "16.8.3",
     "react-dom": "16.8.3",
-    "react-scripts": "2.1.5"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "2.1.5",
+    "tailwindcss": "^1.1.4"
   },
   "devDependencies": {
     "faker": "^4.1.0",
