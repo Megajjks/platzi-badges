@@ -73,15 +73,6 @@
       "avatarUrl": "https://www.gravatar.com/avatar/d5a91308668dd768e955e2efd0fcdb37?d=identicon"
     },
     {
-      "id": "a878c84d-8f49-45da-bbda-313503f9898f",
-      "firstName": "Nova",
-      "lastName": "Bergstrom",
-      "email": "Darrell10@gmail.com",
-      "jobTitle": "Lead Interactions Officer",
-      "twitter": "NovaBergstrom48167",
-      "avatarUrl": "https://www.gravatar.com/avatar/e65037a095cfcc6aec56cad1a2128207?d=identicon"
-    },
-    {
       "id": "eb28f57f-6448-4d40-8f57-8db27831a605",
       "firstName": "Myrtle",
       "lastName": "Torphy",
@@ -448,14 +439,6 @@
       "jobTitle": "Frontend engineer",
       "twitter": "jayrosk",
       "id": "f9xQwdQ"
-    },
-    {
-      "firstName": "Jayro",
-      "lastName": "Salazar",
-      "email": "megajjks@gmail.com",
-      "jobTitle": "Frontend engineer",
-      "twitter": "jayrosk",
-      "id": "x6IJCDt"
     },
     {
       "firstName": "Pedro",

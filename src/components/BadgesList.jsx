@@ -23,7 +23,7 @@ class BadgeList extends React.Component {
         {this.props.badges.map(badge => {
           return (
             <li key={badge.id} className="Badges__CardItem my-3">
-              <Link className="text-reset text-decoration-none" to={`/badges/${badge.id}/edit`}>
+              <Link className="text-reset text-decoration-none" to={`/badges/${badge.id}`}>
                 <div className="card-body col-12 d-flex">
                   <Gravatar className="rounded-circle w-25 h-25 col-md-4" email={badge.email} alt="avatar"/>
                   <div className="col-md-8 d-flex flex-column align-items-center">
