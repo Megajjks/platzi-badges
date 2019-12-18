@@ -10,15 +10,6 @@
       "avatarUrl": "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon"
     },
     {
-      "id": "d00d3614-101a-44ca-b6c2-0be075aeed3d",
-      "firstName": "Major",
-      "lastName": "Rodriguez",
-      "email": "Ilene66@hotmail.com",
-      "jobTitle": "Human Research Architect",
-      "twitter": "MajorRodriguez61545",
-      "avatarUrl": "https://www.gravatar.com/avatar/d57a8be8cb9219609905da25d5f3e50a?d=identicon"
-    },
-    {
       "id": "63c03386-33a2-4512-9ac1-354ad7bec5e9",
       "firstName": "Daphney",
       "lastName": "Torphy",
@@ -35,15 +26,6 @@
       "jobTitle": "Central Branding Representative",
       "twitter": "TatyanaVon35871-3686",
       "avatarUrl": "https://www.gravatar.com/avatar/98c382edd93414c1649b9db866000f97?d=identicon"
-    },
-    {
-      "id": "1921a734-cc05-4f71-a677-ffe38dda6958",
-      "firstName": "Maude",
-      "lastName": "Effertz",
-      "email": "Dan_Weimann0@yahoo.com",
-      "jobTitle": "Product Solutions Analyst",
-      "twitter": "MaudeEffertz73114",
-      "avatarUrl": "https://www.gravatar.com/avatar/01d0de92ec9ca4fdfbb99edf6a1abfea?d=identicon"
     },
     {
       "id": "3629db36-14f9-4f24-b139-200f3a1b9af7",
@@ -449,14 +431,6 @@
       "id": "s3U02TU"
     },
     {
-      "firstName": "Lia",
-      "lastName": "Eugenia",
-      "email": "lesg@gmail.com",
-      "jobTitle": "Nurse",
-      "twitter": "lesg",
-      "id": "dwhwgIN"
-    },
-    {
       "firstName": "Jerry",
       "lastName": "Kauftman",
       "email": "jerryk@mail.com",
@@ -471,6 +445,14 @@
       "jobTitle": "job",
       "twitter": "exampleTwitter",
       "id": "jP-YwYi"
+    },
+    {
+      "firstName": "Lia",
+      "lastName": "Salazar",
+      "email": "lesg@mail.com",
+      "jobTitle": "Nurse",
+      "twitter": "lesg",
+      "id": "fdmV9j5"
     }
   ]
 }
